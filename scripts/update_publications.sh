@@ -5,7 +5,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 QUERY='((Ravi VM[Author] OR Madapusi Ravi V[Author] OR (Ravi V[Author] AND Freiburg[Affiliation])) AND (Freiburg[Affiliation] OR glioma[tiab] OR glioblastoma[tiab] OR brain[tiab] OR astrocyte*[tiab])) OR 38653236[PMID]'
 # PMIDs from homonymous authors or unrelated work. One per line, keep sorted.
-EXCLUDE=''
+EXCLUDE='33523858 33214712 24402279'
 E=https://eutils.ncbi.nlm.nih.gov/entrez/eutils
 ids=$(curl -sG "$E/esearch.fcgi" --data-urlencode db=pubmed --data-urlencode "term=$QUERY" \
       --data-urlencode retmax=500 --data-urlencode retmode=json \
