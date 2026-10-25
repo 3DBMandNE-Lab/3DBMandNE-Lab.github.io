@@ -1,31 +1,5 @@
 [
  {
-  "name": "atman",
-  "description": "Proteomics Analysis in Rust",
-  "url": "https://github.com/3DBMandNE-Lab/atman",
-  "homepage": "",
-  "language": "Rust",
-  "stars": 0,
-  "topics": [],
-  "pushed": "2026-10-23",
-  "kind": "tool",
-  "paper": "",
-  "status": ""
- },
- {
-  "name": "TNF_Synpo",
-  "description": "Project files for the TNF Sync Project",
-  "url": "https://github.com/3DBMandNE-Lab/TNF_Synpo",
-  "homepage": "",
-  "language": "R",
-  "stars": 0,
-  "topics": [],
-  "pushed": "2026-09-20",
-  "kind": "project",
-  "paper": "",
-  "status": "Kleidonas et al., manuscript under review"
- },
- {
   "name": "LGG_Hypoxia",
   "description": "Repo holding code for the LGG Hypoxia project",
   "url": "https://github.com/3DBMandNE-Lab/LGG_Hypoxia",
@@ -65,19 +39,6 @@
   "status": ""
  },
  {
-  "name": "Npas4_Cortical_Injury",
-  "description": "Repo holding the code to Npas4 associated neuronal silencing in cortical injury.",
-  "url": "https://github.com/3DBMandNE-Lab/Npas4_Cortical_Injury",
-  "homepage": "",
-  "language": "R",
-  "stars": 0,
-  "topics": [],
-  "pushed": "2026-02-06",
-  "kind": "project",
-  "paper": "",
-  "status": "Töykkälä et al. 2026"
- },
- {
   "name": "Meningeoma_PharmaAtlas",
   "description": "Codebase for the Meningeoma organoid Pharmacological Atlas",
   "url": "https://github.com/3DBMandNE-Lab/Meningeoma_PharmaAtlas",
@@ -87,19 +48,6 @@
   "topics": [],
   "pushed": "2026-01-28",
   "kind": "project",
-  "paper": "",
-  "status": ""
- },
- {
-  "name": "cloupe-to-10x",
-  "description": "Convert 10x Genomics Loupe Browser (.cloupe) files to Seurat-compatible formats",
-  "url": "https://github.com/3DBMandNE-Lab/cloupe-to-10x",
-  "homepage": "",
-  "language": "Python",
-  "stars": 0,
-  "topics": [],
-  "pushed": "2026-01-25",
-  "kind": "tool",
   "paper": "",
   "status": ""
  },
@@ -114,32 +62,6 @@
   "pushed": "2025-07-18",
   "kind": "project",
   "paper": "",
-  "status": ""
- },
- {
-  "name": "SIH_CSF_Proteomics",
-  "description": "Proteomics analysis of samples sourced from the CSF of SIH patients",
-  "url": "https://github.com/3DBMandNE-Lab/SIH_CSF_Proteomics",
-  "homepage": "",
-  "language": "R",
-  "stars": 0,
-  "topics": [],
-  "pushed": "2025-07-15",
-  "kind": "tool",
-  "paper": "",
-  "status": ""
- },
- {
-  "name": "MicroFace",
-  "description": "A complete single cell to morphometric analysis tool",
-  "url": "https://github.com/3DBMandNE-Lab/MicroFace",
-  "homepage": "",
-  "language": "R",
-  "stars": 0,
-  "topics": [],
-  "pushed": "2025-07-06",
-  "kind": "tool",
-  "paper": "42389604",
   "status": ""
  },
  {
@@ -164,7 +86,7 @@
   "stars": 0,
   "topics": [],
   "pushed": "2025-06-11",
-  "kind": "tool",
+  "kind": "project",
   "paper": "",
   "status": ""
  }
