@@ -1,0 +1,128 @@
+[
+ {
+  "year": 2023,
+  "kind": "abstract",
+  "title": "A glioblastoma vessel co-option and transition to a resistant cell state are induced by chemoradiation",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noad137.052"
+ },
+ {
+  "year": 2022,
+  "kind": "abstract",
+  "title": "A personalized BRAF mutant glioblastoma with Human2Human ex-vivo cortical cultures",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noac174.189"
+ },
+ {
+  "year": 2021,
+  "kind": "abstract",
+  "title": "A novel glioblastoma invasion model using human brain slice cultures",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noab196.878"
+ },
+ {
+  "year": 2021,
+  "kind": "abstract",
+  "title": "Deconvolution of spatially resolved T cell receptor profiling (SPTCR-seq) uncovered regional anti-tumor immunity in glioblastoma",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noab196.387"
+ },
+ {
+  "year": 2021,
+  "kind": "abstract",
+  "title": "Diversity of cellular communication in glioblastoma",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noab196.854"
+ },
+ {
+  "year": 2021,
+  "kind": "abstract",
+  "title": "Immune environment shapes glioblastoma heterogeneity in time and space",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noab196.846"
+ },
+ {
+  "year": 2021,
+  "kind": "abstract",
+  "title": "Inhibition of GBM invasion by the α-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA) glutamate receptor antagonist Perampanel",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noab180.030"
+ },
+ {
+  "year": 2021,
+  "kind": "abstract",
+  "title": "Integration of spatially resolved transcriptomics and metabolomics uncovers hypoxia-driven accumulation of genomic instabilities in human glioma",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noab196.823"
+ },
+ {
+  "year": 2021,
+  "kind": "abstract",
+  "title": "JAK STAT inhibition reverses myeloid cell induced anti tumor immunity in T cells",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noab196.832"
+ },
+ {
+  "year": 2021,
+  "kind": "abstract",
+  "title": "Spatiotemporal diversity of cell communication in glioblastoma aids in transcriptional plasticity",
+  "venue": "Brain and Spine",
+  "doi": "10.1016/j.bas.2021.100822"
+ },
+ {
+  "year": 2021,
+  "kind": "preprint",
+  "title": "Crosstalk between lymphoid and myeloid cells orchestrates glioblastoma immunity through Interleukin 10 signaling",
+  "venue": "Research Square",
+  "doi": "10.21203/rs.3.rs-244157/v1"
+ },
+ {
+  "year": 2021,
+  "kind": "preprint",
+  "title": "Oncometabolite R-2 hydroxyglutarate aids the inflammatory transformation of peritumoral astrocytes",
+  "venue": "Research Square",
+  "doi": "10.21203/rs.3.rs-720962/v1"
+ },
+ {
+  "year": 2021,
+  "kind": "preprint",
+  "title": "Spatiotemporal heterogeneity of glioblastoma is dictated by microenvironmental interference",
+  "venue": "bioRxiv",
+  "doi": "10.1101/2021.02.16.431475"
+ },
+ {
+  "year": 2020,
+  "kind": "abstract",
+  "title": "Landscape of glioblastoma-associated immunity by integration of scRNA-seq and spatial transcriptomics",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noaa215.464"
+ },
+ {
+  "year": 2020,
+  "kind": "abstract",
+  "title": "The oncometabolite D-2HG induce inflammatory astrogliosis causing neurotoxicity and seizures in IDH mutated glioma",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noaa215.940"
+ },
+ {
+  "year": 2020,
+  "kind": "preprint",
+  "title": "Inferring spatially transient gene expression pattern from spatial transcriptomic studies",
+  "venue": "bioRxiv",
+  "doi": "10.1101/2020.10.20.346544"
+ },
+ {
+  "year": 2020,
+  "kind": "preprint",
+  "title": "Lineage and Spatial Mapping of Glioblastoma-associated Immunity",
+  "venue": "bioRxiv",
+  "doi": "10.1101/2020.06.01.121467"
+ },
+ {
+  "year": 2019,
+  "kind": "abstract",
+  "title": "Astrocytic Environment Aid the Evolution of Immunosuppressive Environment in Glioblastoma",
+  "venue": "Neuro-Oncology",
+  "doi": "10.1093/neuonc/noz126.204"
+ }
+]

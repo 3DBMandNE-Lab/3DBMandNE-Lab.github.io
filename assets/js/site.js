@@ -43,4 +43,16 @@
   // home: recent pubs
   const rp=$("#recent-pubs");
   if(rp) load("data/publications.json").then(d=>{rp.innerHTML=d.slice(0,+rp.dataset.limit||5).map(pubHTML).join("");}).catch(()=>{rp.innerHTML="";});
+
+  // publications page: conference abstracts and preprints from ORCID
+  const abs=$("#abstracts");
+  if(abs) load("data/abstracts.json").then(d=>{
+    let out="",last=null;
+    for(const w of d){
+      if(w.year!==last){out+=`<div class="year-h">${w.year}</div>`;last=w.year;}
+      const href=w.doi?`https://doi.org/${w.doi}`:"";
+      out+=`<article class="pub compact"><a class="t" href="${href}" target="_blank" rel="noopener">${esc(w.title)}</a><div class="j"><em>${esc(w.venue)}</em> · ${w.kind==="preprint"?"preprint":"conference abstract"}</div></article>`;
+    }
+    abs.innerHTML=out; const c=$("#abs-count"); if(c) c.textContent=`${d.length}`;
+  }).catch(e=>{abs.innerHTML=`<p class="muted">Could not load abstracts (${esc(e.message)}).</p>`;});
 })();

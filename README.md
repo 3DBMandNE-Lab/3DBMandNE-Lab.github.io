@@ -7,3 +7,4 @@ Static site for https://3dbmandne-lab.github.io (PI Dr. Vidhya M. Ravi) — plai
 - `assets/` — stylesheet, script, favicon
 
 Edit the HTML directly for text changes. Commit and push to `main`; GitHub Pages serves the root.
+- `data/abstracts.json` — regenerate with `scripts/update_orcid.sh` (conference abstracts and preprints from the public ORCID record)
