@@ -1,0 +1,132 @@
+[
+ {
+  "name": "atman",
+  "description": "Proteomics Analysis in Rust",
+  "url": "https://github.com/3DBMandNE-Lab/atman",
+  "homepage": "",
+  "language": "Rust",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2026-10-23"
+ },
+ {
+  "name": "TNF_Synpo",
+  "description": "Project files for the TNF Sync Project",
+  "url": "https://github.com/3DBMandNE-Lab/TNF_Synpo",
+  "homepage": "",
+  "language": "R",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2026-09-20"
+ },
+ {
+  "name": "LGG_Hypoxia",
+  "description": "Repo holding code for the LGG Hypoxia project",
+  "url": "https://github.com/3DBMandNE-Lab/LGG_Hypoxia",
+  "homepage": "",
+  "language": "R",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2026-07-30"
+ },
+ {
+  "name": "GBM_IronMetabolism",
+  "description": "Project Repo for the Ironman project",
+  "url": "https://github.com/3DBMandNE-Lab/GBM_IronMetabolism",
+  "homepage": "",
+  "language": "",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2026-07-29"
+ },
+ {
+  "name": "SpatialBiologyWorkshop_Freiburg2026",
+  "description": "Materials for the spatial biology workshop in July 2026 at the Neurozentrum Freiburg",
+  "url": "https://github.com/3DBMandNE-Lab/SpatialBiologyWorkshop_Freiburg2026",
+  "homepage": "",
+  "language": "HTML",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2026-07-07"
+ },
+ {
+  "name": "Npas4_Cortical_Injury",
+  "description": "Repo holding the code to Npas4 associated neuronal silencing in cortical injury.",
+  "url": "https://github.com/3DBMandNE-Lab/Npas4_Cortical_Injury",
+  "homepage": "",
+  "language": "R",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2026-02-06"
+ },
+ {
+  "name": "Meningeoma_PharmaAtlas",
+  "description": "Codebase for the Meningeoma organoid Pharmacological Atlas",
+  "url": "https://github.com/3DBMandNE-Lab/Meningeoma_PharmaAtlas",
+  "homepage": "",
+  "language": "R",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2026-01-28"
+ },
+ {
+  "name": "cloupe-to-10x",
+  "description": "Convert 10x Genomics Loupe Browser (.cloupe) files to Seurat-compatible formats",
+  "url": "https://github.com/3DBMandNE-Lab/cloupe-to-10x",
+  "homepage": "",
+  "language": "Python",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2026-01-25"
+ },
+ {
+  "name": "GBM_CarPBMC",
+  "description": "GBM_CarT",
+  "url": "https://github.com/3DBMandNE-Lab/GBM_CarPBMC",
+  "homepage": "",
+  "language": "R",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2025-07-18"
+ },
+ {
+  "name": "SIH_CSF_Proteomics",
+  "description": "Proteomics analysis of samples sourced from the CSF of SIH patients",
+  "url": "https://github.com/3DBMandNE-Lab/SIH_CSF_Proteomics",
+  "homepage": "",
+  "language": "R",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2025-07-15"
+ },
+ {
+  "name": "MicroFace",
+  "description": "A complete single cell to morphometric analysis tool",
+  "url": "https://github.com/3DBMandNE-Lab/MicroFace",
+  "homepage": "",
+  "language": "R",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2025-07-06"
+ },
+ {
+  "name": "Neural_ECM",
+  "description": "Repo to hold info on CNS based ECM",
+  "url": "https://github.com/3DBMandNE-Lab/Neural_ECM",
+  "homepage": "",
+  "language": "JavaScript",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2025-07-01"
+ },
+ {
+  "name": "LGG_mIHC",
+  "description": "Exploration of the role of Hypoxia in LGG state differentiation",
+  "url": "https://github.com/3DBMandNE-Lab/LGG_mIHC",
+  "homepage": "",
+  "language": "R",
+  "stars": 0,
+  "topics": [],
+  "pushed": "2025-06-11"
+ }
+]
