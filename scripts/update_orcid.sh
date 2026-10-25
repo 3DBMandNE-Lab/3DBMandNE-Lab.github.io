@@ -4,7 +4,7 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 ORCID=0000-0003-0062-2099
 # DOIs to skip: figshare data deposits are filtered by title; anything else goes here.
-SKIP='10.1038/srep33776'
+SKIP='10.1038/srep33776 10.1093/neuonc/noab180.030'
 curl -s -H "Accept: application/json" "https://pub.orcid.org/v3.0/$ORCID/record" \
   | SKIP="$SKIP" python3 -I -c '
 import json,sys,os,re,html
