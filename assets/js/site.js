@@ -19,19 +19,8 @@
       <a class="t" href="${href}" target="_blank" rel="noopener">${esc(p.title)}</a>
       <div class="a">${authors(p.authors)}</div>
       <div class="j"><em>${esc(p.journal)}</em> · ${p.year}</div>
-      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/${p.pmid}/" target="_blank" rel="noopener">PubMed</a>${p.doi?`<a href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI</a>`:""}${p.pmc?`<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/${p.pmc}/" target="_blank" rel="noopener">Full text</a>`:""}</div>
+      <div class="links"><a href="https://pubmed.ncbi.nlm.nih.gov/${p.pmid}/" target="_blank" rel="noopener">PubMed</a>${p.doi?`<a href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI</a>`:""}${p.pmc?`<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/${p.pmc}/" target="_blank" rel="noopener">Full text</a>`:""}${p.code?`<a href="${esc(p.code)}" target="_blank" rel="noopener">Code</a>`:""}</div>
     </article>`;
-  }
-  function repoHTML(r){
-    const topics=r.topics.length?`<div class="small muted">${r.topics.map(esc).join(" · ")}</div>`:"";
-    const paper=r.paper?`<div class="small"><a href="https://pubmed.ncbi.nlm.nih.gov/${esc(r.paper)}/" target="_blank" rel="noopener">Published paper ↗</a></div>`
-               :r.status?`<div class="small muted">${esc(r.status)}</div>`:"";
-    const home=r.homepage?`<div class="small"><a href="${esc(r.homepage)}" target="_blank" rel="noopener">Website ↗</a></div>`:"";
-    return `<div class="card repo">
-      <a class="name" href="${r.url}" target="_blank" rel="noopener">${esc(r.name)}</a>
-      <p class="small" style="margin:0">${esc(r.description)}</p>${topics}${paper}${home}
-      <div class="meta">${r.language?`<span class="lang" data-l="${esc(r.language)}">${esc(r.language)}</span>`:""}<span>updated ${r.pushed}</span>${r.stars?`<span>★ ${r.stars}</span>`:""}</div>
-    </div>`;
   }
   const load=f=>fetch(f).then(r=>{if(!r.ok)throw new Error(f+" "+r.status);return r.json();});
 
@@ -51,15 +40,7 @@
     q.addEventListener("input",render); y.addEventListener("change",render); render();
   }).catch(e=>{pubs.innerHTML=`<p class="muted">Could not load publications (${esc(e.message)}).</p>`;});
 
-  // home: recent pubs / repos
+  // home: recent pubs
   const rp=$("#recent-pubs");
   if(rp) load("data/publications.json").then(d=>{rp.innerHTML=d.slice(0,+rp.dataset.limit||5).map(pubHTML).join("");}).catch(()=>{rp.innerHTML="";});
-  const rr=$("#recent-repos");
-  if(rr) load("data/repos.json").then(d=>{rr.innerHTML=d.filter(r=>r.kind==="tool").slice(0,+rr.dataset.limit||3).map(repoHTML).join("");}).catch(()=>{rr.innerHTML="";});
-
-  // software page
-  const groups=["tool","resource","project"].map(k=>[k,$("#repos-"+k)]).filter(([,el])=>el);
-  if(groups.length) load("data/repos.json").then(d=>{
-    for(const [k,el] of groups){const rs=d.filter(r=>r.kind===k); el.innerHTML=rs.length?rs.map(repoHTML).join(""):`<p class="muted">Nothing here yet.</p>`;}
-  }).catch(e=>{for(const [,el] of groups) el.innerHTML=`<p class="muted">Could not load repositories (${esc(e.message)}).</p>`;});
 })();
