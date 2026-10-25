@@ -34,11 +34,11 @@
       const hit=data.filter(p=>(!yr||String(p.year)===yr)&&(!s||[p.title,p.journal,...p.authors].join(" ").toLowerCase().includes(s)));
       let out="",last=null;
       for(const p of hit){ if(p.year!==last){out+=`<div class="year-h">${p.year}</div>`;last=p.year;} out+=pubHTML(p); }
-      pubs.innerHTML=out||`<p class="muted">No publications match.</p>`;
+      pubs.innerHTML=out||`<p class="muted">Nothing matches that search.</p>`;
       c.textContent=`${hit.length} of ${data.length}`;
     }
     q.addEventListener("input",render); y.addEventListener("change",render); render();
-  }).catch(e=>{pubs.innerHTML=`<p class="muted">Could not load publications (${esc(e.message)}).</p>`;});
+  }).catch(e=>{pubs.innerHTML=`<p class="muted">The publication list is temporarily unavailable.</p>`;});
 
   // home: recent pubs
   const rp=$("#recent-pubs");
@@ -54,5 +54,5 @@
       out+=`<article class="pub compact"><a class="t" href="${href}" target="_blank" rel="noopener">${esc(w.title)}</a><div class="j"><em>${esc(w.venue)}</em> · ${w.kind==="preprint"?"preprint":"conference abstract"}</div></article>`;
     }
     abs.innerHTML=out; const c=$("#abs-count"); if(c) c.textContent=`${d.length}`;
-  }).catch(e=>{abs.innerHTML=`<p class="muted">Could not load abstracts (${esc(e.message)}).</p>`;});
+  }).catch(e=>{abs.innerHTML=`<p class="muted">This list is temporarily unavailable.</p>`;});
 })();
