@@ -24,9 +24,12 @@
   }
   function repoHTML(r){
     const topics=r.topics.length?`<div class="small muted">${r.topics.map(esc).join(" · ")}</div>`:"";
+    const paper=r.paper?`<div class="small"><a href="https://pubmed.ncbi.nlm.nih.gov/${esc(r.paper)}/" target="_blank" rel="noopener">Published paper ↗</a></div>`
+               :r.status?`<div class="small muted">${esc(r.status)}</div>`:"";
+    const home=r.homepage?`<div class="small"><a href="${esc(r.homepage)}" target="_blank" rel="noopener">Website ↗</a></div>`:"";
     return `<div class="card repo">
       <a class="name" href="${r.url}" target="_blank" rel="noopener">${esc(r.name)}</a>
-      <p class="small" style="margin:0">${esc(r.description)}</p>${topics}
+      <p class="small" style="margin:0">${esc(r.description)}</p>${topics}${paper}${home}
       <div class="meta">${r.language?`<span class="lang" data-l="${esc(r.language)}">${esc(r.language)}</span>`:""}<span>updated ${r.pushed}</span>${r.stars?`<span>★ ${r.stars}</span>`:""}</div>
     </div>`;
   }
@@ -52,9 +55,11 @@
   const rp=$("#recent-pubs");
   if(rp) load("data/publications.json").then(d=>{rp.innerHTML=d.slice(0,+rp.dataset.limit||5).map(pubHTML).join("");}).catch(()=>{rp.innerHTML="";});
   const rr=$("#recent-repos");
-  if(rr) load("data/repos.json").then(d=>{rr.innerHTML=d.slice(0,+rr.dataset.limit||3).map(repoHTML).join("");}).catch(()=>{rr.innerHTML="";});
+  if(rr) load("data/repos.json").then(d=>{rr.innerHTML=d.filter(r=>r.kind==="tool").slice(0,+rr.dataset.limit||3).map(repoHTML).join("");}).catch(()=>{rr.innerHTML="";});
 
   // software page
-  const repos=$("#repos");
-  if(repos) load("data/repos.json").then(d=>{repos.innerHTML=d.map(repoHTML).join("");}).catch(e=>{repos.innerHTML=`<p class="muted">Could not load repositories (${esc(e.message)}).</p>`;});
+  const groups=["tool","resource","project"].map(k=>[k,$("#repos-"+k)]).filter(([,el])=>el);
+  if(groups.length) load("data/repos.json").then(d=>{
+    for(const [k,el] of groups){const rs=d.filter(r=>r.kind===k); el.innerHTML=rs.length?rs.map(repoHTML).join(""):`<p class="muted">Nothing here yet.</p>`;}
+  }).catch(e=>{for(const [,el] of groups) el.innerHTML=`<p class="muted">Could not load repositories (${esc(e.message)}).</p>`;});
 })();

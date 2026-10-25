@@ -7,28 +7,43 @@
   <nav id="nav"><ul>
     <li><a href="research.html" aria-current="page">Research</a></li>
     <li><a href="publications.html">Publications</a></li>
-    <li><a href="software.html">Software</a></li>
+    <li><a href="software.html">Software &amp; projects</a></li>
     <li><a href="people.html">People</a></li>
     <li><a href="people.html#join">Join</a></li>
   </ul></nav>
 </div></header>
-<main><section><div class="wrap prose">
+<main>
+<section class="hero" style="padding:64px 0 48px"><div class="wrap">
   <div class="eyebrow">Research</div>
-  <h1>Four themes, one tissue system</h1>
-  <p class="lede muted">Everything below runs on the same substrate: human cortical tissue from neurosurgical resections, kept viable for weeks, measured with single-cell and spatial methods.</p>
+  <h1>One tissue system, four questions</h1>
+  <p class="lede">Human cortical tissue from neurosurgical resections, kept alive in culture for weeks, is the substrate for nearly everything we do. We ask how glioma reorganises that tissue, how glia respond to injury and implants, what the spatial organisation of a tumour predicts, and how to turn those measurements into tools a surgeon or pathologist can use.</p>
+</div></section>
 
-  <h2>3D ex vivo human brain models</h2>
-  <p>We established organotypic culture of adult human cortex as a framework for environmental research in neuro-oncology (Ravi et al., <em>Life Sci Alliance</em> 2019) and have since used it to study glioblastoma infiltration, drug response and the glial response to injury and implants. Recent work extends the model with spatially controlled tumour delivery via cryogel biomaterials and the Core2Edge organoid–slice protocol. We have also written on the translational applications and ethical considerations of human brain slice cultures (<em>Life Sci Alliance</em> 2025).</p>
+<section><div class="wrap">
+  <div class="grid cols-2">
+    <div class="card"><div class="num">01 · Platform</div><h3>Human brain slice cultures</h3>
+      <p>We established organotypic culture of adult human cortex as a framework for neuro-oncology (<a href="https://doi.org/10.26508/lsa.201900305">Life Sci Alliance 2019</a>) and documented the surgical preparation of tissue for research (<a href="https://doi.org/10.1007/s00701-023-05611-9">Acta Neurochir 2023</a>). The platform has since been extended: isolation of viable tumour cells from slice cultures for single-cell sequencing (<a href="https://doi.org/10.1016/j.xpro.2023.102383">STAR Protocols 2023</a>), injection-free delivery of glioblastoma cells with soft cryogels (<a href="https://doi.org/10.1016/j.bioadv.2026.215226">Biomater Adv 2026</a>) and the Core2Edge organoid–slice model of infiltration (<a href="https://doi.org/10.1038/s41596-026-01412-3">Nat Protoc 2026</a>).</p>
+      <p>Working with living human brain tissue raises questions beyond the technical. We reviewed the translational uses and the ethical framework in <a href="https://doi.org/10.26508/lsa.202403160">Life Sci Alliance 2025</a>.</p></div>
+    <div class="card"><div class="num">02 · Glioma</div><h3>Spatial organisation and tumour–host interaction</h3>
+      <p>Glioblastoma is organised in layers that track hypoxia and host response (<a href="https://doi.org/10.1016/j.cell.2024.03.029">Cell 2024</a>), and tumour and host tissue reprogram each other in both directions (<a href="https://doi.org/10.1016/j.ccell.2022.05.009">Cancer Cell 2022</a>). On the host side we have described reactive astrocytes that build an immunosuppressive environment (<a href="https://doi.org/10.1038/s41467-019-10493-6">Nat Commun 2019</a>) and myeloid IL-10 that disables T cells (<a href="https://doi.org/10.1038/s41467-022-28523-1">Nat Commun 2022</a>). On the tumour side, sialic acid metabolism wires transcellular connectivity (<a href="https://doi.org/10.1093/neuonc/noad101">Neuro-Oncology 2023</a>) and iron-metabolism stress programs in restricted niches prime invasive mesenchymal states (<a href="https://doi.org/10.1093/neuonc/noag220">Neuro-Oncology 2026</a>).</p>
+      <p>The same methods now apply to IDH-mutant glioma, where spatial organisation evolves with grade (<a href="https://doi.org/10.1016/j.ccell.2026.08.005">Cancer Cell 2026</a>) and hypoxia-associated niches support transcriptional plasticity (<a href="https://github.com/3DBMandNE-Lab/LGG_Hypoxia">Das et al. 2026, code</a>).</p>
+      <p class="small muted" style="margin:0">Active: <a href="https://github.com/3DBMandNE-Lab/GBM_IronMetabolism">GBM iron metabolism</a> · <a href="https://github.com/3DBMandNE-Lab/LGG_Hypoxia">LGG hypoxia niches</a> · <a href="https://github.com/3DBMandNE-Lab/LGG_mIHC">spatial immune networks by multiplex IHC</a> · <a href="https://github.com/3DBMandNE-Lab/GBM_CarPBMC">CAR-T and PBMC in GBM</a></p></div>
+    <div class="card"><div class="num">03 · Glia</div><h3>Glial response to injury, implants and synaptic signalling</h3>
+      <p>The lab's neuroengineering roots are in the tissue response to chronic neural probes: transcriptional characterisation of the glial reaction to flexible microprobes (<a href="https://doi.org/10.1016/j.biomaterials.2021.121230">Biomaterials 2021</a>), synchrotron tomography of the probe–tissue interface (<a href="https://doi.org/10.1038/s41598-019-42544-9">Sci Rep 2019</a>) and, now, a conserved multi-lineage transcriptional architecture at the electrode interface integrating bulk, single-nucleus and spatial data (<a href="https://github.com/3DBMandNE-Lab/Npas4_Cortical_Injury">Töykkälä et al. 2026, code</a>).</p>
+      <p>Microglial morphology is read automatically with MicroFace, which maps remodelling zones and bifurcated trajectories during microinjury recovery (<a href="https://doi.org/10.1016/j.isci.2026.116485">iScience 2026</a>). In human slice cultures we study how TNFα acts on synaptopodin and synaptic plasticity, combining human snRNA-seq with mouse slice transcriptomics (<a href="https://github.com/3DBMandNE-Lab/TNF_Synpo">Kleidonas et al., under review, code</a>).</p></div>
+    <div class="card"><div class="num">04 · Translation</div><h3>Diagnostics, pharmacogenomics and proteomics</h3>
+      <p>Spatial transcriptomics with graph-based deep learning improves routine CNS tumour diagnostics (<a href="https://doi.org/10.1038/s43018-024-00904-z">Nat Cancer 2025</a>). In meningioma we built a multi-omic pharmacogenomic atlas linking mutation, methylation and expression to drug response across 179 compounds (<a href="https://github.com/3DBMandNE-Lab/Meningeoma_PharmaAtlas">code</a>). Cerebrospinal fluid proteomics, starting with spontaneous intracranial hypotension (<a href="https://github.com/3DBMandNE-Lab/SIH_CSF_Proteomics">code</a>), extends the same statistical pipeline to a body fluid that can be sampled repeatedly.</p>
+      <p>Beyond glioma, the group contributes to platelet-rich fibrin and dural-closure studies with the neurosurgical department, and to biomaterial work on collagen crosslinking.</p></div>
+  </div>
+</div></section>
 
-  <h2>Spatial multi-omics</h2>
-  <p>Spatially resolved transcriptomics, single-nucleus RNA-seq, proteomics and imaging are integrated to resolve the organisation of brain tumours. This line includes the multi-layered spatial organisation of glioblastoma (<em>Cell</em> 2024), bidirectional tumour–host interdependence from spatial multi-omics (<em>Cancer Cell</em> 2022) and the evolving spatial organisation of IDH-mutant glioma (<em>Cancer Cell</em> 2026). We develop the analysis tooling ourselves; see <a href="software.html">Software</a>.</p>
-
-  <h2>Tumour–host interactions</h2>
-  <p>How glioblastoma reprograms astrocytes, microglia and T cells, and how the host tissue shapes tumour cell state. Examples: reactive astrocytes aiding an immunosuppressive environment (<em>Nat Commun</em> 2019), myeloid IL-10 driving T-cell dysfunction (<em>Nat Commun</em> 2022), sialic acid metabolism and transcellular connectivity (<em>Neuro-Oncology</em> 2023), and iron-metabolism stress programs priming invasive mesenchymal states (<em>Neuro-Oncology</em> 2026).</p>
-
-  <h2>Neuroengineering and clinical diagnostics</h2>
-  <p>The lab's engineering side covers the tissue response to chronic neural implants, automated morphometry of microglia (MicroFace, <em>iScience</em> 2026) and molecular fingerprinting for intraoperative use. Beyond glioma, we apply the same spatial and proteomic methods to meningioma, medulloblastoma, cerebrospinal fluid and spinal cord macrophages.</p>
-</div></section></main>
+<section><div class="wrap prose">
+  <h2>Computation is part of the lab</h2>
+  <p>We write the analysis software we rely on. <a href="https://github.com/3DBMandNE-Lab/atman">Atman</a> is a Rust command-line toolkit for proteomics that runs the same commands on Olink, SomaScan, MaxQuant, DIA-NN and Spectronaut matrices and records every input and output by SHA-256 so any result can be traced and rerun. <a href="https://github.com/3DBMandNE-Lab/cloupe-to-10x">cloupe-to-10x</a> opens Loupe Browser files for Seurat. The <a href="https://3dbmandne-lab.github.io/Neural_ECM/">Neural ECM</a> resource curates extracellular-matrix components of the brain by cell type. Each paper ships its code as a repository, organised by figure, so a reader can rerun what we ran. See <a href="software.html">Software and projects</a>.</p>
+  <h2>Teaching</h2>
+  <p>We ran the <a href="https://github.com/3DBMandNE-Lab/SpatialBiologyWorkshop_Freiburg2026">Spatial Biology Workshop Freiburg 2026</a> at the Neurozentrum, with hands-on tutorials on CODEX spatial proteomics and 10x Visium spatial transcriptomics. The materials are public.</p>
+</div></section>
+</main>
 <footer class="site-footer"><div class="wrap">
   <address><strong>3D Brain Models &amp; NeuroEngineering Lab</strong><br>Department of Neurosurgery, Medical Center – University of Freiburg<br>Freiburg im Breisgau, Germany</address>
   <div><a href="https://github.com/3DBMandNE-Lab">GitHub</a> · <a href="mailto:kevin.joseph@uniklinik-freiburg.de">Email</a><br><span class="small">Source and data for this site live in <a href="https://github.com/3DBMandNE-Lab/3DBMandNE-Lab.github.io">this repository</a>.</span></div>
