@@ -3,7 +3,7 @@
 # Edit QUERY / EXCLUDE below, then run: scripts/update_publications.sh
 set -euo pipefail
 cd "$(dirname "$0")/.."
-QUERY='((Ravi VM[Author] OR Madapusi Ravi V[Author] OR (Ravi V[Author] AND Freiburg[Affiliation])) AND (Freiburg[Affiliation] OR glioma[tiab] OR glioblastoma[tiab] OR brain[tiab] OR astrocyte*[tiab]))'
+QUERY='((Ravi VM[Author] OR Madapusi Ravi V[Author] OR (Ravi V[Author] AND Freiburg[Affiliation])) AND (Freiburg[Affiliation] OR glioma[tiab] OR glioblastoma[tiab] OR brain[tiab] OR astrocyte*[tiab])) OR 27658476[PMID]'
 # PMIDs from homonymous authors or unrelated work. One per line, keep sorted.
 # Code repositories shown under a publication. PMID=URL, one per line.
 CODE='42844997=https://github.com/3DBMandNE-Lab/GBM_IronMetabolism'
