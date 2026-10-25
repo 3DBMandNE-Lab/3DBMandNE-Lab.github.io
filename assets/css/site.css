@@ -114,3 +114,19 @@ figcaption{font-size:.85rem;color:var(--ink-3);margin-top:8px}
 .timeline .when{flex:0 0 68px;font-family:var(--mono);font-size:.85rem;color:var(--accent);padding-top:3px}
 
 .pub.compact{padding:10px 0}.pub.compact .t{font-size:1rem}
+
+/* PI profile */
+.pi{padding-top:56px}
+.pi-grid{display:grid;grid-template-columns:240px 1fr;gap:48px;align-items:start}
+@media (max-width:760px){.pi-grid{grid-template-columns:1fr}.pi-side{max-width:260px}}
+.pi-photo{width:100%;height:auto;border-radius:16px;border:1px solid var(--line);display:block}
+.pi-links{display:flex;flex-direction:column;gap:6px;margin-top:14px;font-size:.88rem;word-break:break-all}
+.pi .lede{font-size:1.15rem;color:var(--ink-2);max-width:60ch}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:32px;margin:28px 0 8px}
+.facts h3,.pi h3{font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-3);margin:22px 0 8px}
+.facts h3{margin-top:0}
+.timeline.tight li{padding:7px 0;font-size:.95rem}
+.timeline.tight .when{flex-basis:62px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-block;padding:6px 12px;border-radius:999px;background:var(--accent-2);color:var(--accent-ink);font-size:.86rem;line-height:1.3}
+.muted-chips .chip{background:var(--panel);color:var(--ink-2)}
