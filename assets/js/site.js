@@ -1,5 +1,5 @@
 (function(){
-  const LAB = ["Ravi VM","Ravi V","Joseph K"]; // bolded in author lists
+  const LAB = ["Ravi VM","Ravi V","Madapusi Ravi V"]; // bolded in author lists
   const $ = (s,el=document)=>el.querySelector(s);
   const esc = s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 

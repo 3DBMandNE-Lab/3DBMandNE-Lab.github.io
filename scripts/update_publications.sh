@@ -3,9 +3,9 @@
 # Edit QUERY / EXCLUDE below, then run: scripts/update_publications.sh
 set -euo pipefail
 cd "$(dirname "$0")/.."
-QUERY='((Ravi VM[Author] OR Joseph K[Author]) AND Freiburg[Affiliation]) OR 38653236[PMID]'
+QUERY='((Ravi VM[Author] OR Madapusi Ravi V[Author] OR (Ravi V[Author] AND Freiburg[Affiliation])) AND (Freiburg[Affiliation] OR glioma[tiab] OR glioblastoma[tiab] OR brain[tiab] OR astrocyte*[tiab])) OR 38653236[PMID]'
 # PMIDs from homonymous authors or unrelated work. One per line, keep sorted.
-EXCLUDE='26821584 27412669 41308689 42790282'
+EXCLUDE=''
 E=https://eutils.ncbi.nlm.nih.gov/entrez/eutils
 ids=$(curl -sG "$E/esearch.fcgi" --data-urlencode db=pubmed --data-urlencode "term=$QUERY" \
       --data-urlencode retmax=500 --data-urlencode retmode=json \
